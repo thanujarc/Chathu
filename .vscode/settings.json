@@ -9,6 +9,7 @@
         "list": "cpp",
         "ostream": "cpp",
         "iosfwd": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "stack": "cpp"
     }
 }

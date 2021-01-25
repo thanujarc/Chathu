@@ -52,7 +52,7 @@ int main(){
     mymap.insert(p);
     auto it =mymap.begin();
    // it->first, it->second; //getting key and value
-    auto it_map=mymap.find("hii") ; //find
+    auto it_map=mymap.find(5) ; //find
     if (it_map != mymap.end())
         mymap.erase (it_map);
     
