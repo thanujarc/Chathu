@@ -35,24 +35,25 @@ int main(){
     }
 
 
-    //map
-    map <int,string> mymap;
-    pair<int, string> p;
-     //Adding elements
-    p.first=5;
-    p.second="hii";
-    mymap.insert(p);
+    //map 
+    map <string,int> mymap={{"first",1},{"second",2}};
+    // Insert
+    mymap["Michael"] = 16;
+    mymap.insert(std::pair<std::string, int>{"Bill", 25});
+    mymap.insert({"Chris", 30});
+    pair<string, int> p;
+    p.first="hii";p.second=1; mymap.insert(p);
+    // Search and change
+    mymap["Michael"] = 18;  mymap.at("Chris") = 27;
     //reading values
-    string map_val=mymap[5];
+    int map_val=mymap["Michael"];
     //replacing 
-    mymap[5]="hh";
+    mymap["Michael"]=8;
     //removing elements
-    mymap.erase(7);// removed by key
-    //inserting
-    mymap.insert(p);
+    mymap.erase("Chris");// removed by key
     auto it =mymap.begin();
    // it->first, it->second; //getting key and value
-    auto it_map=mymap.find(5) ; //find
+    auto it_map=mymap.find("Michael") ; //find
     if (it_map != mymap.end())
         mymap.erase (it_map);
     
@@ -61,6 +62,14 @@ int main(){
     set<int> my_set;
     my_set.insert(9);
     my_set.erase(9); //erase by value, not by index
+    //check if the insert value is a duplicate
+    auto r=my_set.insert(9);//returns a pair.
+    // If the second element is false it is a duplicate
+    if(!r.second){cout<<"Duplicate"<<endl;}
+
+    //multiset
+    multiset<int> my_multiset;
+
 
 
 
