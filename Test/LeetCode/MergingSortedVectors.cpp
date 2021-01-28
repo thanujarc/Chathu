@@ -43,3 +43,4 @@ int main(){
     for(int i:c){
         cout<<i<<" ";
     }
+}

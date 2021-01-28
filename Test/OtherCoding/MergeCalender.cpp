@@ -98,7 +98,7 @@ vector<Interval *> mergeCalaenders( vector<Interval> C1, vector<Interval>  C2, i
     vector<Interval *> mergedCalender;
     vector<Interval *> freeTimes;
 
-    //first merge based of increasing start time
+    //first merge based on increasing start time
         while(pointer1<C1.size() && pointer2<C2.size()){
             Interval I1=C1[pointer1];
             Interval I2=C2[pointer2];

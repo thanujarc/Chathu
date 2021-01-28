@@ -8,7 +8,8 @@ class Solution {
 public:
     int twoCitySchedCost(vector<vector<int>>& costs) {
         int total_cost=0;
-        multimap<int,int> cost_diff;
+        multimap<int,int> cost_diff;//no need to use this. use the same vector and sort the vector
+        // using a lambda function;
         
         for(int i=0;i<costs.size();i++){
             cost_diff.insert({costs[i][0]-costs[i][1],i});

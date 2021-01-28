@@ -30,7 +30,7 @@ string decodeString(string s){
                 temp.push_back(stackS.top());
                 stackS.pop();
             }
-            stackS.pop();//remove ']'
+            stackS.pop();//remove '['
 
             //get the repeating number
             int repeatN=0;
