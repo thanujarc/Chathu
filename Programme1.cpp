@@ -3,8 +3,8 @@
 #include <vector>
 using namespace std;
 int main(){
-    cout << "Hello world";
-    vector<string> msg{"a","b"};
+    cout << "Hello world"<<endl;
+    //vector<string> msg{"a","b"};
    
 
     return 0 ;
